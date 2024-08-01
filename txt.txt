@@ -1,2 +1,0 @@
-welcome to money-tranfer-website
-let's do login-register auth
