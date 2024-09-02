@@ -1,17 +1,24 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Banner from './components/Banner';
+import Services from './components/Services';
+import Footer from './components/Footer';
 import Login from './components/Login';
 import Register from './components/Register';
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Register" element={<Register />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <Header />
+      <Login/>
+      <Register/>
+      <Banner />
+      <Services />
+      <Footer />
+     
+      
+    </div>
   );
-};
+}
 
 export default App;
