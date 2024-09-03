@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import '../styles/Login.css';
+import '../styles/Register.css';
+// import logo from '../assets/logo.png'; 
 
 const Register = () => {
     const [formData, setFormData] = useState({
@@ -25,6 +26,7 @@ const Register = () => {
 
     return (
         <div className="register-container">
+            <img src={logo} alt="Logo" className="logo" />
             <h2>Register</h2>
             <form onSubmit={handleSubmit}>
                 <input

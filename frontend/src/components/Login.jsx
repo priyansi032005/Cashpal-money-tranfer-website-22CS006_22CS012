@@ -1,42 +1,52 @@
 import React, { useState } from 'react';
 import '../styles/Login.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+// import logo from '../assets/logo.png'; 
 
 const Login = () => {
-  const [passwordVisible, setPasswordVisible] = useState(false);
+    const [formData, setFormData] = useState({
+        email: '',
+        password: '',
+    });
 
-  const togglePasswordVisibility = () => {
-    setPasswordVisible(!passwordVisible);
-  };
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
 
-  return (
-    <div className="login-container">
-      <h2>Login</h2>
-      <form>
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" required />
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Add login logic here
+        console.log('Login Data Submitted:', formData);
+    };
+
+    return (
+        <div className="login-container">
+            <img src={logo} alt="Logo" className="logo" />
+            <h2>Login</h2>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                />
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    value={formData.password}
+                    onChange={handleChange}
+                    required
+                />
+                <input type="submit" value="Login" />
+            </form>
         </div>
-        <div className="form-group">
-          <label htmlFor="password">Password</label>
-          <div className="password-container">
-            <input
-              type={passwordVisible ? 'text' : 'password'}
-              id="password"
-              required
-            />
-            <FontAwesomeIcon
-              icon={passwordVisible ? faEyeSlash : faEye}
-              onClick={togglePasswordVisibility}
-              className="eye-icon"
-            />
-          </div>
-        </div>
-        <button type="submit">Login</button>
-      </form>
-    </div>
-  );
+    );
 };
 
 export default Login;

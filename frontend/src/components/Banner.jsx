@@ -1,19 +1,17 @@
 import React from 'react';
 import './Banner.css';
+import bannerImage from '../assets/banner-img.jpg';
 
 const Banner = () => {
-  return (
-    <div className="banner">
-      <h1>Simple, Secure, Fast Transfer</h1>
-      <p>Utility Bill Payments</p>
-      <div className="service-icons">
-        {/* Add icons for services */}
-        <img src="path-to-electricity-icon" alt="Electricity Bill" />
-        <img src="path-to-mobile-recharge-icon" alt="Mobile Recharge" />
-        {/* Add other service icons similarly */}
-      </div>
-    </div>
-  );
+    return (
+        <section className="banner">
+            <img src={bannerImage} alt="Banner" />
+            <div className="banner-text">
+                <h1>Simple, Secure Fast Transfer</h1>
+                <p>Utility Bill Payments</p>
+            </div>
+        </section>
+    );
 }
 
 export default Banner;

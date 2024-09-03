@@ -15,8 +15,6 @@ const App = () => {
       <Banner />
       <Services />
       <Footer />
-     
-      
     </div>
   );
 }
