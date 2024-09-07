@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   padding: 40px;
-  background-color: #f9f5f5;
 }
 
 .about-us-image {
@@ -14,7 +13,6 @@
   width: 100%;
   height: auto;
   border-radius: 8px;
-  /* Optional: Adjust if you want rounded corners */
 }
 
 .about-us-content {
@@ -25,7 +23,6 @@
 
 .about-us-content h2 {
   color: #a0a0a0;
-  /* Color for "About us" title */
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -33,7 +30,6 @@
 .about-us-content h3 {
   font-size: 32px;
   color: #333;
-  /* Adjust color to match design */
   margin-bottom: 20px;
 }
 
@@ -52,15 +48,12 @@
 .service-point .icon {
   flex-shrink: 0;
   font-size: 32px;
-  /* Adjust icon size */
   color: #ff6600;
-  /* Adjust icon color */
   margin-right: 15px;
 }
 
 .service-point p {
   margin: 0;
   color: #333;
-  /* Adjust text color */
   line-height: 1.6;
 }
