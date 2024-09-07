@@ -3,10 +3,9 @@ import './Aboutus.css';
 
 const AboutUs = () => {
   return (
-    <div className="about-us-container">
+    <div className="about-us-container" id='aboutus'>
       <div className="about-us-image">
-        {/* Background image or use an <img> tag */}
-        <img src="your-image-url.jpg" alt="About Us Background" />
+        <img src="https://www.bing.com/images/search?view=detailV2&ccid=05dIO5cm&id=B2BE5902B941FC39D4D5DB53A3A582D46135ABB4&thid=OIP.05dIO5cmRB9rXHyRqg1GDwHaFp&mediaurl=https%3a%2f%2fstatic.vecteezy.com%2fsystem%2fresources%2fpreviews%2f001%2f759%2f880%2flarge_2x%2fmoney-transfer-isometric-web-banner-vector.jpg&exph=1960&expw=2567&q=Money+Transfer+Banner&simid=608039749319857206&FORM=IRPRST&ck=E30E872A1C812E173C772D304CD12BD3&selectedIndex=15&itb=0" />
       </div>
       <div className="about-us-content">
         <h2>About us</h2>
