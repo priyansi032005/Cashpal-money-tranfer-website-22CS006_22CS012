@@ -10,52 +10,139 @@
 
 // export default Signup
 
-import React from "react";
-import "./Signup.css"; // Import your CSS file for styling
+import React, { useState } from "react";
+import "./Signup.css"; // Make sure this is the path where your CSS file is saved.
 
-function Signup() {
+function Register() {
+  const [formData, setFormData] = useState({
+    userName: "",
+    firstName: "",
+    lastName: "",
+    mobileNumber: "",
+    email: "",
+    pinCode: "",
+    referralCode: "",
+    address: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form data:", formData);
+    // Add functionality to handle form submission here
+  };
+
   return (
-    <div className="signup-container">
-      <div className="signup-box">
-        <h1>Get started with Us</h1>
-        <p>Register a new membership</p>
+    <div className="register-container">
+      <h2>Get started with Us</h2>
+      <p>Register a new membership</p>
 
-        <form className="signup-form">
-          <div className="form-group">
-            <label htmlFor="username">
-              <i className="fas fa-user"></i> User Name
-            </label>
-            <input type="text" id="username" placeholder="User Name" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="firstname">First Name</label>
-            <input type="text" id="firstname" placeholder="First Name" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="lastname">Last Name</label>
-            <input type="text" id="lastname" placeholder="Last Name" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="mobile">Mobile Number</label>
-            <input type="text" id="mobile" placeholder="Mobile Number" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">E-Mail</label>
-            <input type="email" id="email" placeholder="E-Mail" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="pincode">PinCode</label>
-            <input type="text" id="pincode" placeholder="Pin Code" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="address">Address</label>
-            <input type="text" id="address" placeholder="Address" />
-          </div>
-          <button className="save-btn" type="submit">
-            Save
-          </button>
-        </form>
-        <p className="signin-link">
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="userName">User Name</label>
+          <input
+            type="text"
+            name="userName"
+            value={formData.userName}
+            onChange={handleChange}
+            placeholder="User Name"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="firstName">First Name</label>
+          <input
+            type="text"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
+            placeholder="First Name"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="lastName">Last Name</label>
+          <input
+            type="text"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+            placeholder="Last Name"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="mobileNumber">Mobile Number</label>
+          <input
+            type="text"
+            name="mobileNumber"
+            value={formData.mobileNumber}
+            onChange={handleChange}
+            placeholder="Mobile Number"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="email">E-Mail</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="E-Mail"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="pinCode">PinCode</label>
+          <input
+            type="text"
+            name="pinCode"
+            value={formData.pinCode}
+            onChange={handleChange}
+            placeholder="Pin Code"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="referralCode">Referral Code</label>
+          <input
+            type="text"
+            name="referralCode"
+            value={formData.referralCode}
+            onChange={handleChange}
+            placeholder="Referral Code"
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="address">Address</label>
+          <input
+            type="text"
+            name="address"
+            value={formData.address}
+            onChange={handleChange}
+            placeholder="Address"
+            required
+          />
+        </div>
+
+        <button type="submit" className="save-btn">
+          Save
+        </button>
+      </form>
+
+      <div className="register-footer">
+        <p>
           Already have an account? <a href="/login">Sign In</a>
         </p>
       </div>
@@ -63,4 +150,4 @@ function Signup() {
   );
 }
 
-export default Signup;
+export default Register;

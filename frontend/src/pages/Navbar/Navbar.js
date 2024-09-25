@@ -1,20 +1,34 @@
-import React from 'react';
-import './Navbar.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-brand">Aena</div>
+      <div className="navbar-brand">CashPal: Money Tranfer Website</div>
       <ul className="navbar-menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="#aboutus">About</a></li>
-        <li><a href="#service">Services</a></li>
-        <li><a href="#bank">Bank Detail</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="/login">Login</a></li>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="#aboutus">About</a>
+        </li>
+        <li>
+          <a href="#service">Services</a>
+        </li>
+        <li>
+          <a href="#bank">Bank Detail</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+        <li>
+          <a href="/login">Login</a>
+        </li>
       </ul>
-      <Link to="/signup" className="get-started-btn">Get Started</Link>
+      <Link to="/signup" className="get-started-btn">
+        Get Started
+      </Link>
     </nav>
   );
 };

@@ -52,7 +52,7 @@ const Login = () => {
             <a href="#">Forgot Pin?</a>
           </div>
           <button type="submit" className="login-button">
-            SIGN IN
+            <a href="/">SIGN IN</a>
           </button>
         </form>
         <p className="signup-text">

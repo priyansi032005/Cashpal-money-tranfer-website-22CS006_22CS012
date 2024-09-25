@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa"; 
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import "./Contact.css";
+import Navbar from "../Navbar/Navbar";
 
 function ContactForm() {
   const [formData, setFormData] = useState({

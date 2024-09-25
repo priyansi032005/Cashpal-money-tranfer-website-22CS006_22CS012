@@ -1,122 +1,96 @@
-/* Setting the height of body and html to ensure the container covers the full page */
-html,
-body {
-  height: 100%;
+/* General Body Styling */
+/* body {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Poppins", sans-serif;
+  padding: 0;
+  font-family: "Arial", sans-serif;
   background: linear-gradient(
     to right,
-    #6a11cb,
-    #2575fc
-  ); /* Background gradient */
-}
-
-/* The container that holds the login form */
-.login-container {
+    #7f00ff,
+    #00d2ff
+  ); 
+  height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-}
+} */
 
-/* Box containing the login form */
-.login-box {
-  background: #fff;
-  padding: 40px;
+/* Container for the Login Form */
+.login-container {
+  background-color: white; /* Form background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
+  padding: 30px;
   width: 350px;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adding a shadow for better visibility */
   text-align: center;
 }
 
-/* Styling for heading */
-h2 {
-  color: #27ae60;
+/* Title Styling */
+.login-container h2 {
   margin-bottom: 10px;
+  color: #2eb82e; /* Green title color */
+  font-size: 22px;
 }
 
-/* Basic styling for paragraphs */
-p {
-  color: #555;
-  margin-bottom: 20px;
-}
-
-/* Input field container with relative positioning for icons */
-.input-group {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-/* Styling for input fields */
-.input-group input {
-  width: 100%;
-  padding: 10px 40px; /* Space for icons */
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  outline: none;
+/* Subtitle Styling */
+.login-container p {
+  color: #666;
   font-size: 14px;
+  margin-bottom: 25px;
 }
 
-/* Icons positioning inside the input fields */
-.input-group i {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  color: #888;
+/* Input Fields */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
-/* Forgot password and pin section */
-.forgot-section {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-/* Styling links */
-.forgot-section a {
-  color: #555;
+/* Links (Forgot Password, Forgot Pin) */
+.login-container a {
+  color: #666;
+  font-size: 12px;
+  display: block;
+  margin: 5px 0;
   text-decoration: none;
-  font-size: 14px;
 }
 
-/* Hover effect for links */
-.forgot-section a:hover {
-  color: #27ae60;
+.login-container a:hover {
+  text-decoration: underline;
 }
 
-/* Button for signing in */
-.login-button {
-  background-color: #e74c3c;
-  color: #fff;
+/* Sign In Button */
+.login-container .signin-btn {
+  background-color: #ff5e57; /* Red button */
+  color: white;
+  padding: 10px;
   border: none;
-  padding: 10px 20px;
-  width: 100%;
   border-radius: 5px;
+  width: 100%;
   cursor: pointer;
   font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
-/* Hover effect for button */
-.login-button:hover {
-  background-color: #c0392b;
+.login-container .signin-btn:hover {
+  background-color: #e64e45; /* Darker red on hover */
 }
 
-/* Styling for the sign-up link */
-.signup-text {
-  margin-top: 20px;
+/* Signup Link */
+.login-container .signup-link {
+  margin-top: 15px;
+  font-size: 12px;
 }
 
-/* Link for sign-up */
-.signup-text a {
-  color: #f39c12;
+.login-container .signup-link a {
+  color: #ff9900; /* Orange sign-up link */
   text-decoration: none;
 }
 
-/* Hover effect for the sign-up link */
-.signup-text a:hover {
-  color: #e67e22;
+.login-container .signup-link a:hover {
+  text-decoration: underline;
 }
