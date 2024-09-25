@@ -1,6 +1,6 @@
 import React from "react";
 import "./Aboutus.css";
-import main from "../../images/main.jpg";
+import main from "../../images/img2.jpg";
 const AboutUs = () => {
   return (
     <>
@@ -9,7 +9,9 @@ const AboutUs = () => {
           <img src={main} />
         </div>
         <div className="about-us-content">
-          <h2>About us</h2>
+          <h2>
+            <b>About us</b>
+          </h2>
           <h3>We provide all types of recharge services</h3>
           <p>
             Our mobile recharge either prepaid or postpaid is just a click away
