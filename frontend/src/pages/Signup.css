@@ -1,88 +1,96 @@
-/* Background styling */
-/* body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
-  height: 100vh;
+.register-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-.signup-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.signup-box {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  margin-left: 190px;
+  margin-right: 80px;
+  max-width: 1200px;
+  height: 600px;
   background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  width: 400px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
-.signup-box h1 {
-  color: #63b438;
+.image-section {
+  flex: 1;
+}
+
+.register-image {
+  width: 700px;
+  height: 100%;
+}
+
+.form-section {
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+  margin-top: -50px;
+}
+
+h2 {
+  margin-bottom: 20px;
   font-size: 24px;
-  margin-bottom: 10px;
-  text-align: center;
 }
 
-.signup-box p {
-  text-align: center;
+p {
   margin-bottom: 30px;
-  font-size: 14px;
-  color: #666;
+  font-size: 16px;
 }
 
-.signup-form .form-group {
-  margin-bottom: 15px;
+.form-group {
+  margin-bottom: 20px;
 }
 
-.signup-form .form-group label {
+.form-row {
+  display: flex;
+  gap: 20px; /* Space between the two columns */
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group label {
   display: block;
   margin-bottom: 5px;
-  color: #333;
-  font-weight: bold;
+  font-size: 14px;
 }
 
-.signup-form .form-group input {
+.form-group input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 .save-btn {
+  display: block;
   width: 100%;
+  padding: 15px;
   background-color: #c0392b;
   color: white;
-  padding: 10px;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .save-btn:hover {
-  background-color: #55a12c;
+  background-color: #a93226;
 }
 
-.signin-link {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 12px;
+.register-footer {
+  margin-top: 20px;
 }
 
-.signin-link a {
-  color: #2575fc;
+.register-footer p {
+  font-size: 14px;
+}
+
+.register-footer a {
+  color: #3498db;
   text-decoration: none;
 }
 
-.signin-link a:hover {
+.register-footer a:hover {
   text-decoration: underline;
 }

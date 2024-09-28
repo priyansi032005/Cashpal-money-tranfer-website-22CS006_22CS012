@@ -1,6 +1,7 @@
 import React from "react";
 import "./Aboutus.css";
 import main from "../../images/img2.jpg";
+
 const AboutUs = () => {
   return (
     <>
@@ -9,25 +10,25 @@ const AboutUs = () => {
           <img src={main} />
         </div>
         <div className="about-us-content">
-          <h2>
+          <h1>
             <b>About us</b>
-          </h2>
+          </h1>
           <h3>We provide all types of recharge services</h3>
           <p>
             Our mobile recharge either prepaid or postpaid is just a click away
-            with AENA ENTERPRISE! AENA ENTERPRISE is your one-stop shop solution
-            for online recharge.
+            with CashPal:Money Transfer Website! CashPal:Money Transfer Website
+            is your one-stop shop solution for online recharge.
           </p>
           <div className="service-point">
             <div className="icon">🔲</div>
             <p>
               Our specialty is to provide the recharge without Gmail, Facebook
-              interface. AENA ENTERPRISE is one of the best recharge-level Multi
-              Service Sites in India. AENA ENTERPRISE gives you multiple
-              operator recharge in single balance. It means the retailer doesn't
-              have to invest separately for each operator, hence saving the
-              hassle of maintaining separate sims and mobiles for different
-              operators.
+              interface. CashPal:Money Transfer Website is one of the best
+              recharge-level Multi Service Sites in India. CashPal gives you
+              multiple operator recharge in single balance. It means the
+              retailer doesn't have to invest separately for each operator,
+              hence saving the hassle of maintaining separate sims and mobiles
+              for different operators.
             </p>
           </div>
           <div className="service-point">
@@ -43,12 +44,12 @@ const AboutUs = () => {
           <div className="service-point">
             <div className="icon">🔲</div>
             <p>
-              AENA ENTERPRISE Service came into existence as one of the fastest
-              online mobile recharge service providers in India. We believe in
-              providing quality services to our customers and are constantly
-              working towards it. As a result, we are always one step ahead of
-              our competitors and have been able to gain popularity among our
-              users within such a short span of time.
+              CashPal:Money Transfer Website Service came into existence as one
+              of the fastest online mobile recharge service providers in India.
+              We believe in providing quality services to our customers and are
+              constantly working towards it. As a result, we are always one step
+              ahead of our competitors and have been able to gain popularity
+              among our users within such a short span of time.
             </p>
           </div>
         </div>

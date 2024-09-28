@@ -1,15 +1,6 @@
-// import React from 'react'
-
-// const Login = () => {
-//   return (
-//     <div>
-//       <h1>Login</h1>
-//     </div>
-//   )
-// }
-
 import React, { useState } from "react";
 import "./Login.css";
+import main from "../images/img2.jpg";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -17,12 +8,17 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Handle login logic here
     console.log("Logging in", { username, password });
   };
 
   return (
     <div className="login-container">
+      {/* Left side for the image */}
+      <div className="login-image">
+        <img src={main} alt="Login" />
+      </div>
+
+      {/* Right side for the form */}
       <div className="login-box">
         <h2>Let's Get Started</h2>
         <p>Sign in to continue to Your Account.</p>
@@ -49,10 +45,9 @@ const Login = () => {
           </div>
           <div className="forgot-section">
             <a href="#">Forgot Password?</a>
-            <a href="#">Forgot Pin?</a>
           </div>
           <button type="submit" className="login-button">
-            <a href="/">SIGN IN</a>
+            <a href="/">Sign In</a>
           </button>
         </form>
         <p className="signup-text">
