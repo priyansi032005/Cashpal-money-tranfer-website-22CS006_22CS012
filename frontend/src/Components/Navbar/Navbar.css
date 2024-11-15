@@ -33,7 +33,7 @@
 }
 
 .navbar-menu a:hover {
-  color: #2563eb;
+  color: black;
 }
 
 .navbar-icon {
@@ -48,7 +48,7 @@
 }
 
 .navbar-icon svg:hover {
-  color: #2563eb;
+  color: black;
 }
 
 /* Profile Popup Styles */
