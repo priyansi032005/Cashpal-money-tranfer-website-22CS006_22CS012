@@ -1,0 +1,104 @@
+/* Container Styles */
+.recharge-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  /* Header */
+  .recharge-header {
+    margin-bottom: 20px;
+  }
+  
+  .recharge-header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .breadcrumb {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  /* Tabs */
+  .recharge-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .tab-button.active {
+    background-color: #005700;
+  }
+  
+  /* Content Layout */
+  .recharge-content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Form Styles */
+  .recharge-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .service-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .recharge-button {
+    background-color: green;
+    color: white;
+  }
+  
+  .browse-button {
+    background-color: orange;
+    color: white;
+  }
+  
+  /* Offer Section */
+  .recharge-offer {
+    flex: 1;
+  }
+  
+  .recharge-offer h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .offer-box {
+    border: 1px solid #ccc;
+    height: 150px;
+    border-radius: 5px;
+  }
+  

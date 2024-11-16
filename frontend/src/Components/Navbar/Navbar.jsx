@@ -1,12 +1,18 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Search, User, LogOut, Settings, UserCircle } from "lucide-react";
 import "./Navbar.css";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const profileRef = useRef(null);
 
+  const navigate = useNavigate();
+
+  const handleGetStartedClick = () => {
+    navigate("/login");
+  };
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (profileRef.current && !profileRef.current.contains(event.target)) {
@@ -35,12 +41,15 @@ const Navbar = () => {
         <li>
           <a href="#events">Bank Details</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#pda">Contact</a>
-        </li>
+        </li> */}
         <li>
-          <a href="/help">Policy</a>
+          <a href="/help">Help</a>
         </li>
+        <button className="get-started-btn" onClick={handleGetStartedClick}>
+          Get Started
+        </button>
 
         <li className="navbar-icon">
           <Search onClick={() => setIsSearchOpen(!isSearchOpen)} />

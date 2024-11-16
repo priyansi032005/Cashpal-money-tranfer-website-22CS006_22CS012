@@ -159,3 +159,38 @@
   width: 1rem;
   height: 1rem;
 }
+
+/* Styling for the Get Started button */
+.get-started-btn {
+  background-color: #fc730a; /* Primary blue color */
+  color: #ffffff; /* White text */
+  font-size: 1rem; /* Font size */
+  font-weight: bold; /* Bold text */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and click effects */
+  margin-left: 20px; /* Space to the left of the button */
+}
+
+/* Hover effect */
+.get-started-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Active (clicked) effect */
+.get-started-btn:active {
+  transform: scale(0.98); /* Slightly shrink the button */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .get-started-btn {
+    font-size: 0.9rem; /* Slightly smaller font size */
+    padding: 8px 16px; /* Adjust padding */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 10px; /* Add top margin for spacing */
+  }
+}

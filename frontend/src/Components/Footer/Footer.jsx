@@ -5,17 +5,16 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-newsletter">
+      {/* <div className="footer-newsletter">
         <h3>Stay Updated</h3>
         <p>
-          Subscribe to our newsletter for the latest stamp releases, collecting
-          tips, and community events.
+        Subscribe to our newsletter for the latest updates on money transfers, exclusive offers and financial tips
         </p>
         <div className="newsletter-input">
           <input type="email" placeholder="Enter your email" />
           <button>Subscribe</button>
         </div>
-      </div>
+      </div> */}
       <div className="footer-links">
         <div className="footer-section">
           <h4>Quick Links</h4>
