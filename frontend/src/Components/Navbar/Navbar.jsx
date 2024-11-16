@@ -27,19 +27,19 @@ const Navbar = () => {
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="#community">Send Money</a>
+          <a href="#community">About</a>
         </li>
         <li>
-          <a href="#news">Transfer History</a>
+          <a href="#news">Services</a>
         </li>
         <li>
-          <a href="#events">Recipients</a>
+          <a href="#events">Bank Details</a>
         </li>
         <li>
-          <a href="#pda">Account</a>
+          <a href="#pda">Contact</a>
         </li>
         <li>
-          <a href="/help">Help</a>
+          <a href="/help">Policy</a>
         </li>
 
         <li className="navbar-icon">

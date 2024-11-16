@@ -7,7 +7,7 @@ function Header() {
     const navigate = useNavigate();
 
     const handleGetStartedClick = () => {
-        navigate('/login'); // Redirects to the login page
+        navigate('/login'); 
     };
 
     return (

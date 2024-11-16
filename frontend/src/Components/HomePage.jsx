@@ -14,7 +14,7 @@ const HomePage = () => {
       <Navbar />
       <News />
       <Aboutus />
-      < Contactus />
+      <Contactus />
       <Footer />
     </div>
   );
